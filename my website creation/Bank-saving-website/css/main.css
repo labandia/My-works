@@ -79,6 +79,16 @@ h3,
 h4,
 h5 {
   font-weight: var(--font-semi-bold);
+  font-family: var(--body-font) !important;
+}
+
+p,
+span,
+small,
+strong,
+button,
+a {
+  font-family: var(--body-font) !important;
 }
 
 ul {
@@ -159,6 +169,7 @@ button {
 
 .nav__list a, .nav__brand a {
   color: #fff;
+  font-family: var(--body-font) !important;
 }
 
 /*=============== END  NAV ===============*/
@@ -193,6 +204,7 @@ button {
 .home__para p {
   margin-bottom: var(--mb-2);
   opacity: 0.6;
+  font-family: var(--body-font) !important;
 }
 
 .home__imgcontent img {

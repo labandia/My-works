@@ -84,6 +84,16 @@ h3,
 h4,
 h5 {
    font-weight: var(--font-semi-bold);
+   font-family: var(--body-font) !important;
+}
+
+p,
+span,
+small,
+strong,
+button,
+a {
+   font-family: var(--body-font) !important;
 }
 
 ul {
@@ -151,6 +161,7 @@ button {
    &__brand {
       a {
          color: #fff;
+         font-family: var(--body-font) !important;
       }
    }
 }
@@ -183,6 +194,7 @@ button {
       p {
          margin-bottom: var(--mb-2);
          opacity: 0.6;
+         font-family: var(--body-font) !important;
       }
    }
 
