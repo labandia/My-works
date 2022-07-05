@@ -17,7 +17,7 @@
 
    /*========== Font and typography ==========*/
    /*.5rem = 8px | 1rem = 16px ...*/
-   --body-font: "Poppins", sans-serif;
+   --body-font: "lato", sans-serif;
 
    --biggest-font-size: 1.5rem;
    --h1-font-size: 1.5rem;
@@ -79,6 +79,7 @@ body {
    background-color: var(--body-color);
    color: var(--text-color);
    transition: 0.4s;
+   font-family: var(--body-font);
 }
 
 h1,
@@ -88,6 +89,8 @@ h4,
 h5 {
    font-weight: var(--font-semi-bold);
 }
+
+
 
 ul {
    list-style: none;

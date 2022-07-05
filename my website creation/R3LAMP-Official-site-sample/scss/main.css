@@ -507,6 +507,8 @@ summary {
 
 .instruct__details p {
   font-size: var(--normal-font-size);
+  line-height: 1.5em;
+  word-spacing: .16em;
 }
 
 .faq {

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/main2.css">
+</head>
+<style>
+</style>
+<body>
+
+   
+   
+   <!-- <main>
+         <div class="nav">
+
+         </div>
+         <div class="container">
+             <div class="reveal">
+                  <div class="reveal__header">
+                        <h2 class="show">
+                           <span id="create">Creative Design and Front end Developer</span>
+                        </h2>
+                        <p class="show">
+                           <span id="create">Hi Jaye labandia, a passionate Software Developer & UI/UX Designer based in the Philippines.</span>
+                        </p>
+       
+                  </div>
+              </div>
+         </div>
+         <div class="sideback">
+
+         </div>
+   </main> -->
+
+   <!-- <section>
+      <div class="container">
+         <h2 class="rev-block">
+            <span>Reveal Text box</span>
+         </h2>
+         <p></p>
+      </div>
+   </section> -->
+
+
+   <section>
+       <div class="container">
+            <h2>My Work's</h2>
+       </div>
+       <div class="backdown">
+
+       </div>
+   </section>
+
+
+
+
+   <!-- <div class="box">
+      <h1>Creative Design and Front end Developer</h1>
+   </div>
+
+   <div class="box2 ">
+      <p>Hi Jaye labandia, a passionate Software Developer & UI/UX Designer based in the Philippines.</p>
+                
+   </div> -->
+
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+   <script>
+       let tl = gsap.timeline({defaults: {ease: 'SlowMo.easeOut'}});
+       tl.to('.show', {duration: 0, stagger: .3});
+       tl.to('#create', {y: '0%', duration: 1, stagger: .3, delay: 1});
+   </script>
+</body>
+
+</html>
