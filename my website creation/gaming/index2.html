@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link rel="stylesheet" href="css/main2.css">
-</head>
-<style>
-</style>
-<body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="css/main2.css" />
+   </head>
+   <style></style>
+   <body>
+      <div class="overlay first"></div>
+      <div class="overlay second"></div>
+      <div class="overlay third"></div>
 
-   
-   
-   <!-- <main>
+      <!-- <main>
          <div class="nav">
 
          </div>
@@ -35,7 +35,7 @@
          </div>
    </main> -->
 
-   <!-- <section>
+      <!-- <section>
       <div class="container">
          <h2 class="rev-block">
             <span>Reveal Text box</span>
@@ -44,20 +44,14 @@
       </div>
    </section> -->
 
-
-   <section>
-       <div class="container">
+      <!-- <section>
+         <div class="container">
             <h2>My Work's</h2>
-       </div>
-       <div class="backdown">
+         </div>
+         <div class="backdown"></div>
+      </section> -->
 
-       </div>
-   </section>
-
-
-
-
-   <!-- <div class="box">
+      <!-- <div class="box">
       <h1>Creative Design and Front end Developer</h1>
    </div>
 
@@ -66,15 +60,30 @@
                 
    </div> -->
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 
+      <script>
+         let tl = gsap.timeline();
+         // tl.to(".show", { duration: 0, stagger: 0.3 });
+         // tl.to("#create", { y: "0%", duration: 1, stagger: 0.3, delay: 1 });
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+         tl.to(".first", {
+            delay: 0.5,
+            top: "-100%",
+            expo: Power2.easeIn,
+         });
 
-   <script>
-       let tl = gsap.timeline({defaults: {ease: 'SlowMo.easeOut'}});
-       tl.to('.show', {duration: 0, stagger: .3});
-       tl.to('#create', {y: '0%', duration: 1, stagger: .3, delay: 1});
-   </script>
-</body>
+         tl.to(".second", {
+            delay: 0.7,
+            top: "-100%",
+            expo: Power2.easeIn,
+         });
 
+         tl.to(".third", {
+            delay: 0.9,
+            top: "-100%",
+            expo: Power2.easeIn,
+         });
+      </script>
+   </body>
 </html>

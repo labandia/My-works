@@ -90,8 +90,6 @@ h5 {
    font-weight: var(--font-semi-bold);
 }
 
-
-
 ul {
    list-style: none;
 }
@@ -605,4 +603,150 @@ main {
 
 /* For large devices */
 @media screen and (min-width: 992px) {
+}
+
+// .intro {
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//    background-color: #222;
+//    transform: translateY(100%);
+//    z-index: 100;
+// }
+
+.overlayback {
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   top: 0;
+}
+
+.block {
+   position: absolute;
+   width: 0%;
+   height: 25vh;
+   z-index: 100;
+}
+
+.b1 {
+   top: 0;
+   background-color: #222;
+}
+.b2 {
+   top: 25%;
+   background-color: #222;
+}
+.b3 {
+   top: 50%;
+   background-color: #222;
+}
+.b4 {
+   top: 75%;
+   background-color: #222;
+}
+
+.b5 {
+   top: 100%;
+   background-color: #222;
+}
+
+.temp {
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   background-color: #fff;
+   animation: fadeOut 5s linear forwards;
+   opacity: 1;
+}
+
+.firstblock {
+   position: absolute;
+   width: 0%;
+   height: 100vh;
+   background-color: #272727;
+   animation: go-left 4s cubic-bezier(0.74, 0.6, 0.4, 0.92) forwards;
+   left: 0;
+}
+
+.secondblock {
+   position: absolute;
+   width: 0%;
+   height: 100vh;
+   background-color: #b08d74;
+   animation: go-left 3.2s cubic-bezier(0.74, 0.6, 0.4, 0.92) forwards;
+   animation-delay: 3s;
+   left: 0;
+}
+
+.loaders {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   h1 {
+      font-size: 40px;
+      font-weight: bold;
+      animation: loadnow 4s ease-in-out forwards;
+      opacity: 0;
+      transform: translateX(0px);
+   }
+}
+
+@keyframes go-left {
+   0% {
+      width: 0%;
+      left: 0;
+   }
+
+   50% {
+      width: 100%;
+      left: 0;
+   }
+
+   100% {
+      width: 0%;
+      left: 100%;
+   }
+}
+
+@keyframes fadeOut {
+   0% {
+      opacity: 0;
+   }
+   40% {
+      opacity: 0;
+   }
+   41% {
+      opacity: 1;
+   }
+   91% {
+      opacity: 1;
+   }
+   92% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+@keyframes loadnow {
+   0% {
+      opacity: 0;
+      transform: translateX(80px);
+   }
+   20% {
+      opacity: 1;
+      transform: translateX(0px);
+   }
+   80% {
+      opacity: 1;
+      transform: translateX(0px);
+   }
+   100% {
+      opacity: 0;
+      transform: translateX(-80px);
+   }
 }

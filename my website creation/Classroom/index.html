@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+      />
+      <link rel="stylesheet" href="scss/main.css" />
+      <title>Classroom</title>
+   </head>
+   <body>
+      <header class="primary">
+         <div class="primary__wrapper container flex-space">
+            <a href="#" class="fw-bold">R3LAMP</a>
+            <nav class="primary__navigation flex-align">
+               <ul role="list" class="primary__navlist">
+                  <li>
+                     <a href="#" class="nav-active">Course</a>
+                  </li>
+                  <li>
+                     <a href="#">Code Playground</a>
+                  </li>
+                  <li>
+                     <a href="#">Discuss</a>
+                  </li>
+                  <li>
+                     <a href="#">Top leaner</a>
+                  </li>
+                  <li>
+                     <a href="#">Blog</a>
+                  </li>
+               </ul>
+               <i class="bx bxs-grid"></i>
+               <button class="button">Sign in</button>
+            </nav>
+         </div>
+      </header>
+
+      <!---STUDENT PROGRESS SECION-->
+      <section class="student">
+         <div class="container">
+            <div class="flex-space">
+               <div class="student__fullname txt-white">
+                  <h1 class="fw-semi-bold">Hello, Juan dela Cruz</h1>
+                  <span class="fs-400">202010345@gordoncollege.edu.ph</span>
+               </div>
+               <div class="student__status even-columns">
+                  <div class="student__achieve flex-align">
+                     <div class="student__icon">
+                        <i class="bx bxs-star"></i>
+                     </div>
+                     <div class="student__nums txt-white">
+                        <h3 class="fw-semi-bold fs-600">4/10</h3>
+                        <span class="fw-light fs-300">Skill earned</span>
+                     </div>
+                  </div>
+
+                  <div class="student__achieve flex-align">
+                     <div class="student__icon">
+                        <i class="bx bxl-dribbble"></i>
+                     </div>
+                     <div class="student__nums txt-white">
+                        <h3 class="fw-semi-bold fs-600">23</h3>
+                        <span class="fw-light fs-300">Badge earned</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!---COURSE SECION-->
+      <section class="course">
+         <div class="container">
+            <h1 class="fw-semi-bold fs-700">Course</h1>
+            <span class="text-nuetral-400 fs-500"
+               >Course that you have enrolled</span
+            >
+
+            <div class="column-4">
+               <div class="course__card">
+                  <i class="bx bx-dots-vertical-rounded"></i>
+                  <div class="course__avatar">
+                     <img
+                        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                        alt=""
+                     />
+                  </div>
+                  <p class="fw-semi-bold">HTML & CSS3 Tutorial</p>
+                  <span class="text-nuetral-400 fs-300">2343 lesson left</span>
+               </div>
+
+               <div class="course__card">
+                  <i class="bx bx-dots-vertical-rounded"></i>
+                  <div class="course__avatar">
+                     <img
+                        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                        alt=""
+                     />
+                  </div>
+                  <p class="fw-semi-bold">Python 3 Tutorial</p>
+                  <span class="text-nuetral-400 fs-300">2343 lesson left</span>
+               </div>
+
+               <div class="course__card">
+                  <i class="bx bx-dots-vertical-rounded"></i>
+                  <div class="course__avatar">
+                     <img
+                        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                        alt=""
+                     />
+                  </div>
+                  <p class="fw-semi-bold">Java Tutorial</p>
+                  <span class="text-nuetral-400 fs-300">2343 lesson left</span>
+               </div>
+
+               <div class="course__card">
+                  <i class="bx bx-dots-vertical-rounded"></i>
+                  <div class="course__avatar">
+                     <img
+                        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                        alt=""
+                     />
+                  </div>
+                  <p class="fw-semi-bold">Node js Tutorial</p>
+                  <span class="text-nuetral-400 fs-300">2343 lesson left</span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!---PROGAMMING SECION-->
+      <section class="program">
+         <div class="container">
+            <div class="flex-space">
+               <div class="program__title">
+                  <h1 class="fw-semi-bold fs-700">Programming Language</h1>
+                  <span class="text-nuetral-400 fs-500"
+                     >Learn the best way to code from source code</span
+                  >
+               </div>
+               <span class="fw-semi-bold">See all the course</span>
+            </div>
+            <div class="column-4">
+               <div class="program__card">
+                  <img
+                     src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                     alt=""
+                  />
+                  <button class="program__btn">
+                     <i class="bx bxl-html5"></i>
+                  </button>
+                  <br />
+                  <div class="program__content">
+                     <span class="fw-semi-bold">HTML & CSS Tutorial</span>
+                     <p class="text-nuetral-400 fs-300">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit at, ut vero accusantium voluptatibus
+                        accusamus?
+                     </p>
+                  </div>
+
+                  <div class="column-3">
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">lesson</p>
+                        <span class="fw-bold">4.3m</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Courses</p>
+                        <span class="fw-bold">100</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Quizzes</p>
+                        <span class="fw-bold">376</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="program__card">
+                  <img
+                     src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                     alt=""
+                  />
+                  <button
+                     class="program__btn"
+                     style="background-color: rgb(240, 0, 0)"
+                  >
+                     <i class="bx bxl-java"></i>
+                  </button>
+                  <br />
+                  <div class="program__content">
+                     <span class="fw-semi-bold">Java Tutorial</span>
+                     <p class="text-nuetral-400 fs-300">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit at, ut vero accusantium voluptatibus
+                        accusamus?
+                     </p>
+                  </div>
+
+                  <div class="column-3">
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">lesson</p>
+                        <span class="fw-bold">4.3m</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Courses</p>
+                        <span class="fw-bold">100</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Quizzes</p>
+                        <span class="fw-bold">376</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="program__card">
+                  <img
+                     src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                     alt=""
+                  />
+                  <button
+                     class="program__btn"
+                     style="background-color: rgb(29, 92, 228)"
+                  >
+                     <i class="bx bxl-python"></i>
+                  </button>
+                  <br />
+                  <div class="program__content">
+                     <span class="fw-semi-bold">Python Tutorial</span>
+                     <p class="text-nuetral-400 fs-300">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit at, ut vero accusantium voluptatibus
+                        accusamus?
+                     </p>
+                  </div>
+
+                  <div class="column-3">
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">lesson</p>
+                        <span class="fw-bold">4.3m</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Courses</p>
+                        <span class="fw-bold">100</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Quizzes</p>
+                        <span class="fw-bold">376</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="program__card">
+                  <img
+                     src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                     alt=""
+                  />
+                  <button
+                     class="program__btn"
+                     style="background-color: rgb(62, 202, 62)"
+                  >
+                     <i class="bx bxl-nodejs"></i>
+                  </button>
+                  <br />
+                  <div class="program__content">
+                     <span class="fw-semi-bold">Node js Tutorial</span>
+                     <p class="text-nuetral-400 fs-300">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit at, ut vero accusantium voluptatibus
+                        accusamus?
+                     </p>
+                  </div>
+
+                  <div class="column-3">
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">lesson</p>
+                        <span class="fw-bold">4.3m</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Courses</p>
+                        <span class="fw-bold">100</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Quizzes</p>
+                        <span class="fw-bold">376</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!---CODING SECION-->
+      <section class="code">
+         <div class="container">
+            <div class="flex-space">
+               <div class="code__title">
+                  <h1 class="fw-semi-bold fs-700">Programming Language</h1>
+                  <span class="text-nuetral-400 fs-500"
+                     >Learn the best way to code from source code</span
+                  >
+               </div>
+               <span class="fw-semi-bold">See all the course</span>
+            </div>
+
+            <div class="column-4">
+               <div class="code__card txt-white">
+                  <i class="bx bxs-microphone"></i>
+                  <span class="fw-semi-bold">Tasha AMA</span>
+               </div>
+               <div class="code__card txt-white">
+                  <i class="bx bxs-microphone"></i>
+                  <span class="fw-semi-bold">Tasha AMA</span>
+               </div>
+
+               <div class="code__card txt-white">
+                  <i class="bx bxs-microphone"></i>
+                  <span class="fw-semi-bold">Tasha AMA</span>
+               </div>
+
+               <div class="code__card txt-white">
+                  <i class="bx bxs-microphone"></i>
+                  <span class="fw-semi-bold">Tasha AMA</span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!---Commnunity SECION-->
+      <section class="program">
+         <div class="container">
+            <div class="flex-space">
+               <div class="program__title">
+                  <h1 class="fw-semi-bold fs-700">Course By Commnunity</h1>
+                  <span class="text-nuetral-400"
+                     >Learn the best way to code from source code</span
+                  >
+               </div>
+               <span class="fw-semi-bold">See all the course</span>
+            </div>
+            <div class="column-4">
+               <div class="program__card">
+                  <img
+                     src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                     alt=""
+                  />
+                  <button class="program__btn">
+                     <i class="bx bxl-html5"></i>
+                  </button>
+                  <br />
+                  <div class="program__content">
+                     <span class="fw-semi-bold">Python Tutorial</span>
+                     <p class="text-nuetral-400 fs-300">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit at, ut vero accusantium voluptatibus
+                        accusamus?
+                     </p>
+                  </div>
+
+                  <div class="column-3">
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">lesson</p>
+                        <span class="fw-bold">4.3m</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Courses</p>
+                        <span class="fw-bold">100</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Quizzes</p>
+                        <span class="fw-bold">376</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="program__card">
+                  <img
+                     src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                     alt=""
+                  />
+                  <button class="program__btn">
+                     <i class="bx bxl-html5"></i>
+                  </button>
+                  <br />
+                  <div class="program__content">
+                     <span class="fw-semi-bold">Python Tutorial</span>
+                     <p class="text-nuetral-400 fs-300">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit at, ut vero accusantium voluptatibus
+                        accusamus?
+                     </p>
+                  </div>
+
+                  <div class="column-3">
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">lesson</p>
+                        <span class="fw-bold">4.3m</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Courses</p>
+                        <span class="fw-bold">100</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Quizzes</p>
+                        <span class="fw-bold">376</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="program__card">
+                  <img
+                     src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                     alt=""
+                  />
+                  <button class="program__btn">
+                     <i class="bx bxl-html5"></i>
+                  </button>
+                  <br />
+                  <div class="program__content">
+                     <span class="fw-semi-bold">Python Tutorial</span>
+                     <p class="text-nuetral-400 fs-300">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit at, ut vero accusantium voluptatibus
+                        accusamus?
+                     </p>
+                  </div>
+
+                  <div class="column-3">
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">lesson</p>
+                        <span class="fw-bold">4.3m</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Courses</p>
+                        <span class="fw-bold">100</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Quizzes</p>
+                        <span class="fw-bold">376</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="program__card">
+                  <img
+                     src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                     alt=""
+                  />
+                  <button class="program__btn">
+                     <i class="bx bxl-html5"></i>
+                  </button>
+                  <br />
+                  <div class="program__content">
+                     <span class="fw-semi-bold">Python Tutorial</span>
+                     <p class="text-nuetral-400 fs-300">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit at, ut vero accusantium voluptatibus
+                        accusamus?
+                     </p>
+                  </div>
+
+                  <div class="column-3">
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">lesson</p>
+                        <span class="fw-bold">4.3m</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Courses</p>
+                        <span class="fw-bold">100</span>
+                     </div>
+
+                     <div class="program__state">
+                        <p class="fs-300 text-nuetral-400">Quizzes</p>
+                        <span class="fw-bold">376</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="member txt-white">
+         <h1 class="fw-bold fs-800">Become a member of our commnunity</h1>
+         <small class="fs-400">Learn Paying. Play learning</small>
+         <br />
+         <button class="fw-semi-bold">Start a new learning</button>
+      </section>
+
+      <footer class="footer text-nuetral-400">
+         <div class="container">
+            <div class="column-4">
+               <div class="footer__link">
+                  <h3 class="fw-bold fs-700">Follow us</h3>
+                  <div class="footer__social flex-align fs-800">
+                     <i class="bx bxl-facebook-circle"></i>
+                     <i class="bx bxl-instagram-alt"></i>
+                  </div>
+               </div>
+
+               <div class="footer__link fw-semi-bold">
+                  <ul>
+                     <li><a href="#"> home </a></li>
+                     <li><a href="#"> Features </a></li>
+                     <li><a href="#"> Courses </a></li>
+                     <li><a href="#"> Blog </a></li>
+                  </ul>
+               </div>
+               <div class="footer__link fw-semi-bold">
+                  <ul>
+                     <li><a href="#"> Contact </a></li>
+                     <li><a href="#"> Terms of use </a></li>
+                     <li><a href="#"> FAQ </a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

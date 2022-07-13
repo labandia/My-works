@@ -508,7 +508,7 @@ summary {
 .instruct__details p {
   font-size: var(--normal-font-size);
   line-height: 1.5em;
-  word-spacing: .16em;
+  word-spacing: 0.16em;
 }
 
 .faq {
@@ -723,6 +723,7 @@ summary {
 }
 
 .navbottom {
+  display: none;
   position: fixed;
   bottom: 2em;
   display: -webkit-box;
