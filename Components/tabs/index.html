@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="main.css" />
+   </head>
+   <body>
+      <h1 class="title">Tabs with Animation</h1>
+      <div class="tabs">
+         <div class="tabs__header">
+            <div class="active">Home</div>
+            <div>Section</div>
+            <div>Contact</div>
+         </div>
+         <div class="tabs__body">
+            <section class="active">
+               <h1>Home</h1>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis harum eveniet illum tenetur aut quis incidunt
+                  deleniti impedit veniam deserunt, nobis expedita fuga ipsam
+                  odio error? Molestiae nostrum adipisci numquam quidem
+                  deserunt, fuga voluptas molestias nihil doloribus modi
+                  pariatur quae!
+               </p>
+            </section>
+
+            <section>
+               <h1>Section</h1>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis harum eveniet illum tenetur aut quis incidunt
+                  deleniti impedit veniam deserunt, nobis expedita fuga ipsam
+                  odio error? Molestiae nostrum adipisci numquam quidem
+                  deserunt, fuga voluptas molestias nihil doloribus modi
+                  pariatur quae!
+               </p>
+            </section>
+
+            <section>
+               <h1>Contact</h1>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis harum eveniet illum tenetur aut quis incidunt
+                  deleniti impedit veniam deserunt, nobis expedita fuga ipsam
+                  odio error? Molestiae nostrum adipisci numquam quidem
+                  deserunt, fuga voluptas molestias nihil doloribus modi
+                  pariatur quae!
+               </p>
+            </section>
+         </div>
+      </div>
+   </body>
+
+   <script>
+      let tabs = document.querySelector(".tabs");
+      let tabsheader = tabs.querySelector(".tabs__header");
+      let tabsbody = tabs.querySelector(".tabs__body");
+
+      let tabsheader_node = tabs.querySelectorAll(".tabs__header > div");
+      let tabsbody_node = tabs.querySelectorAll(".tabs__body > section");
+
+      for (let i = 0; i < tabsheader_node.length; i++) {
+         tabsheader_node[i].addEventListener("click", function () {
+            tabsheader.querySelector(".active").classList.remove("active");
+            tabsheader_node[i].classList.add("active");
+
+            tabsbody.querySelector(".active").classList.remove("active");
+            tabsbody_node[i].classList.add("active");
+         });
+      }
+   </script>
+</html>

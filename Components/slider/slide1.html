@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Slider Click</title>
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      />
+   </head>
+   <style>
+      * {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+
+      .scroll {
+         position: relative;
+         width: 100%;
+         height: 100vh;
+         background-color: rgb(36, 26, 26);
+         display: flex;
+         align-items: center;
+      }
+      .scroll button {
+         position: absolute;
+
+         z-index: 100;
+         background-color: transparent;
+         color: slateblue;
+         border: none;
+         font-size: 4rem;
+         transform: translateY(-50%);
+      }
+
+      .left {
+         left: 0.5em;
+         top: 50%;
+      }
+
+      .right {
+         right: 0.5em;
+         top: 50%;
+      }
+
+      .scroll__container {
+         width: 100%;
+         height: auto;
+         display: flex;
+         overflow: auto;
+         scroll-behavior: smooth;
+      }
+      .scroll__container::-webkit-scrollbar {
+         -webkit-appearance: none;
+      }
+      .scroll__imgcontainer {
+         min-width: 600px;
+         height: 400px;
+      }
+
+      .scroll__imgcontainer img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   </style>
+
+   <body>
+      <div class="scroll">
+         <div class="scroll__container">
+            <div class="scroll__imgcontainer">
+               <img src="img/927310.jpg" />
+            </div>
+            <div class="scroll__imgcontainer">
+               <img src="img/948697.jpg" />
+            </div>
+            <div class="scroll__imgcontainer">
+               <img src="img/luca-bravo-9l_326FISzk-unsplash.jpg" />
+            </div>
+
+            <div class="scroll__imgcontainer">
+               <img src="img/927310.jpg" />
+            </div>
+            <div class="scroll__imgcontainer">
+               <img src="img/948697.jpg" />
+            </div>
+            <div class="scroll__imgcontainer">
+               <img src="img/luca-bravo-9l_326FISzk-unsplash.jpg" />
+            </div>
+         </div>
+         <button class="left" onclick="scroll_left()">
+            <i class="bx bx-left-arrow-circle"></i>
+         </button>
+
+         <button class="right" onclick="scroll_right()">
+            <i class="bx bx-right-arrow-circle"></i>
+         </button>
+      </div>
+   </body>
+
+   <script>
+      function scroll_right() {
+         var left = document.querySelector(".scroll__container");
+         left.scrollBy(600, 0);
+      }
+
+      function scroll_left() {
+         var left = document.querySelector(".scroll__container");
+         left.scrollBy(-600, 0);
+      }
+   </script>
+</html>

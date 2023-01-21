@@ -173,6 +173,10 @@ a:not([class]) {
    column-gap: 10px;
 }
 
+section {
+   padding: 3em 0;
+}
+
 @media screen and(max-width: 32.5em) {
    .even-columns {
       grid-template-columns: 1fr;
@@ -275,8 +279,6 @@ a:not([class]) {
 
 // Courses template
 .course {
-   padding: 3em 0;
-
    &__card {
       position: relative;
       padding: 1.2em;
@@ -307,7 +309,6 @@ a:not([class]) {
 }
 
 .program {
-   padding: 3em 0;
    &__card {
       position: relative;
       margin-top: 1em;
@@ -351,7 +352,6 @@ a:not([class]) {
 
 // Coding template
 .code {
-   padding: 3em 0;
    &__card {
       display: flex;
       align-items: center;

@@ -1,0 +1,79 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+body {
+   font-family: "Open Sans", sans-serif;
+   text-rendering: optimizeSpeed;
+   padding: 3em;
+   background-color: #f5f5f5;
+}
+
+.title {
+   margin-bottom: 1em;
+}
+
+.tabs__header {
+   display: flex;
+   width: 100%;
+}
+
+.tabs__header > .active {
+   background: rgb(69, 1, 91);
+   background: linear-gradient(
+      90deg,
+      rgba(69, 1, 91, 1) 0%,
+      rgba(95, 3, 123, 1) 33%,
+      rgba(184, 0, 255, 1) 100%
+   );
+   color: #fff;
+}
+
+.tabs__header > div {
+   width: 20%;
+   background-color: #fff;
+   padding: 1em;
+   text-align: center;
+   color: #222;
+   border: 2px solid #f5f5f5;
+   border-left: none;
+   border-radius: 0px 15px 0 0;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.tabs__body {
+   position: relative;
+   height: 40vh;
+   background-color: #fff;
+   padding: 1.5em;
+   overflow: hidden;
+}
+
+.tabs__body > section {
+   position: absolute;
+   box-sizing: border-box;
+   opacity: 0;
+   top: -100%;
+   transform: translateX(-10px);
+}
+
+.tabs__body > section {
+   position: absolute;
+   box-sizing: border-box;
+   opacity: 0;
+   top: -100%;
+   transform: translateX(-10px);
+   transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.tabs__body > section.active {
+   top: 30px;
+   transform: translateY(0px);
+   opacity: 1;
+}
+
+section h1 {
+   margin-bottom: 0.5em;
+}

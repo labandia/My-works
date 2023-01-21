@@ -1,7 +1,6 @@
 * {
   -webkit-tap-highlight-color: transparent;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -17,12 +16,11 @@ html {
 body:before {
   width: 0;
   z-index: 9999;
-  -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 body {
-  font-family: 'Circular Std Book', Arial, Helvetica, sans-serif;
+  font-family: "Circular Std Book", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   min-height: 100vh;
   overflow-x: hidden;
@@ -33,18 +31,11 @@ body {
 section {
   width: 100%;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: absolute;
 }
-
 section h1 {
   font-size: 50px;
 }
@@ -102,13 +93,11 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 1;
   list-style: none;
 }
-
 ul li {
   padding: 1em 0;
   color: #fff;
@@ -120,9 +109,7 @@ ul li {
   right: 0;
   margin: 1.2em;
 }
-
 .menu-btn span {
-  color: #fff;
+  color: #222;
   padding: 1em;
-}
-/*# sourceMappingURL=nav.css.map */
+}/*# sourceMappingURL=nav.css.map */
